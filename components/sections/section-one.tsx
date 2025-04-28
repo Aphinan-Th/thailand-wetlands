@@ -19,7 +19,7 @@ const SectionOne = forwardRef<HTMLElement>(function SectionOne(props, ref) {
 	});
 
 	const fishY = useTransform(scrollYProgress, [0, 0.5], [0, -200]);
-	const birdY = useTransform(scrollYProgress, [0, 0], [0, -200]);
+	const birdY = useTransform(scrollYProgress, [0, 0.5], [0, -100]);
 	const birdRotate = useTransform(scrollYProgress, [0, 0.5], [0, -15]);
 	const textOpacity = useTransform(scrollYProgress, [0, 0.2, 0.3], [0, 1, 1]);
 	const textY = useTransform(scrollYProgress, [0, 0.2, 0.8], [100, 0, -100]);
